@@ -4,10 +4,17 @@ body{
 }
 
 .container{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	font-size: 7em;
 	height: 100vh;
 }
@@ -17,11 +24,15 @@ body{
 	height: 150px;
 	margin: 10px;
 	text-align: center;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
 	transition: all 1s;
 }
 
 .container div:hover{
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
 }
 
 @media only screen and (max-width: 600px) {
@@ -33,6 +44,8 @@ body{
 }
 
 .blue{
+	background: -webkit-gradient(linear, left top, right top, from(rgb(0, 179, 255)), to(rgb(0, 216, 255)));
+	background: -o-linear-gradient(left, rgb(0, 179, 255), rgb(0, 216, 255));
 	background: linear-gradient(to right, rgb(0, 179, 255), rgb(0, 216, 255));
 	color: rgb(255, 114, 0);
 	/*-webkit-text-stroke: 1px #034FF1;*/
@@ -45,6 +58,8 @@ body{
 }
 
 .red{
+	background: -webkit-gradient(linear, left top, right top, from(rgb(255, 44, 105)), to(rgb(255, 106, 141)));
+	background: -o-linear-gradient(left, rgb(255, 44, 105), rgb(255, 106, 141));
 	background: linear-gradient(to right, rgb(255, 44, 105), rgb(255, 106, 141));
 	color: rgb(0, 203, 0);
 	text-shadow:
@@ -57,6 +72,8 @@ body{
 }
 
 .green{
+	background: -webkit-gradient(linear, left top, right top, from(rgb(0, 170, 7)), to(rgb(0, 201, 2)));
+	background: -o-linear-gradient(left, rgb(0, 170, 7), rgb(0, 201, 2));
 	background: linear-gradient(to right, rgb(0, 170, 7), rgb(0, 201, 2));
 	color: rgb(255, 48, 107);
 	text-shadow:
@@ -69,6 +86,8 @@ body{
 }
 
 .yellow{
+	background: -webkit-gradient(linear, left top, right top, from(rgb(255, 211, 0)), to(rgb(255, 230, 0)));
+	background: -o-linear-gradient(left, rgb(255, 211, 0), rgb(255, 230, 0));
 	background: linear-gradient(to right, rgb(255, 211, 0), rgb(255, 230, 0));
 	color: rgb(0, 193, 255);
 	text-shadow:
