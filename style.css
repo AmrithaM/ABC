@@ -1,0 +1,77 @@
+body{
+	margin: 0 auto;
+	font-family: 'Chicle', cursive;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	font-size: 7em;
+}
+
+.container div{
+	width: 175px;
+	height: 150px;
+	margin: 10px;
+	text-align: center;
+	transition: all 1s;
+}
+
+.container div:hover{
+	transform: scale(1.2);
+}
+
+.blue{
+	background: linear-gradient(to right, rgb(0, 179, 255), rgb(0, 216, 255));
+	color: rgb(255, 114, 0);
+	/*-webkit-text-stroke: 1px #034FF1;*/
+	text-shadow:
+       5px 5px 0 rgb(0, 156, 40),
+     -1px -1px 0 rgb(0, 156, 40),  
+      1px -1px 0 rgb(0, 156, 40),
+      -1px 1px 0 rgb(0, 156, 40),
+       1px 1px 0 rgb(0, 156, 40);
+}
+
+.red{
+	background: linear-gradient(to right, rgb(255, 44, 105), rgb(255, 106, 141));
+	color: rgb(0, 203, 0);
+	text-shadow:
+       3px 3px 0 rgb(255, 132, 0),
+     -1px -1px 0 rgb(255, 132, 0),  
+      1px -1px 0 rgb(255, 132, 0),
+      -1px 1px 0 rgb(255, 132, 0),
+       1px 1px 0 rgb(255, 132, 0);
+	
+}
+
+.green{
+	background: linear-gradient(to right, rgb(0, 170, 7), rgb(0, 201, 2));
+	color: rgb(255, 48, 107);
+	text-shadow:
+       3px 3px 0 rgb(99, 81, 246),
+     -1px -1px 0 rgb(99, 81, 246),  
+      1px -1px 0 rgb(99, 81, 246),
+      -1px 1px 0 rgb(99, 81, 246),
+       1px 1px 0 rgb(99, 81, 246);
+	
+}
+
+.yellow{
+	background: linear-gradient(to right, rgb(255, 211, 0), rgb(255, 230, 0));
+	color: rgb(0, 193, 255);
+	text-shadow:
+       3px 3px 0 rgb(248, 77, 232),
+     -1px -1px 0 rgb(248, 77, 232),  
+      1px -1px 0 rgb(248, 77, 232),
+      -1px 1px 0 rgb(248, 77, 232),
+       1px 1px 0 rgb(248, 77, 232);
+}
+
+.speaker img{
+	width: 75px;
+	height: 50px;
+	margin: 10px;
+}
