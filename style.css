@@ -9,6 +9,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	font-size: 7em;
+	height: 100vh;
 }
 
 .container div{
